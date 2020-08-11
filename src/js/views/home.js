@@ -4,12 +4,8 @@ import "../../styles/home.scss";
 
 export const Home = () => (
 	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
 		<p>
-			<img src={rigoImage} />
+			<img src="https://www.shortlist.com/media/imager/201909/39869-posts.article_md.jpg" />
 		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
 	</div>
 );

@@ -1,3 +1,33 @@
-/* 
-    General Styles
-*/
+@import "~bootstrap/scss/bootstrap.scss";
+
+.image{
+    width: 100px;
+    height:60px
+}
+.navbar{
+    background:black;
+}
+li{
+    list-style: none;
+    display: inline;
+    color: gray;
+    margin-left: 10px;
+}
+
+.navSearch{
+    display:flex;
+}
+.viewChoice{
+    display: block;
+    background: black;
+}
+.cardsdisplay{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.planetdisplay{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
