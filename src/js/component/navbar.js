@@ -3,7 +3,6 @@ import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const Navbar = props => {
-	console.log(props);
 	return (
 		<div className="container-fluid">
 			<nav className="navbar navbar-dark ">
@@ -48,6 +47,17 @@ const Navbar = props => {
 				<li>
 					<Link to="/planets">Planets</Link>
 				</li>
+				<br />
+				<br />
+				<button
+					className="btn btn-secondary dropdown-toggle"
+					type="button"
+					id="dropdownMenuButton"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false">
+					Dropdown button
+				</button>
 			</ul>
 		</div>
 	);

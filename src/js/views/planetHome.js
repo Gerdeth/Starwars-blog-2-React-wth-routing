@@ -26,6 +26,8 @@ export class PlanetHome extends React.Component {
 								<PlanetCard
 									imageSrc={`https://loremflickr.com/200/200/planets?random=${plntcardIndex + 1}`}
 									hPlanet={hPlanet}
+									{...this.props}
+									index={plntcardIndex}
 								/>
 							</div>
 						);

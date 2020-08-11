@@ -9,6 +9,7 @@ import Navbar from "./component/navbar";
 import { Footer } from "./component/footer";
 import { CharacterHome } from "./views/characterHome";
 import { PlanetHome } from "./views/planetHome";
+import { PlanetDetails } from "./component/planetDetails";
 
 //create your first component
 class Layout extends React.Component {
@@ -27,6 +28,7 @@ class Layout extends React.Component {
 							<Route exact path="/home" component={Home} />
 							<Route exact path="/planets" component={PlanetHome} />
 							<Route exact path="/characters" component={CharacterHome} />
+							<Route exact path="/planetdetails/:id" component={PlanetDetails} />
 						</Switch>
 						<Footer />
 					</ScrollToTop>
