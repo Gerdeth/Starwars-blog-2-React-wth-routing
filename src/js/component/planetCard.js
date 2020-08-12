@@ -14,9 +14,6 @@ export const PlanetCard = props => {
 							<img src={props.imageSrc} className="card-img-top" alt="..." />
 							<div className="card-body">
 								<p className="card-text">Name: {props.hPlanet.name}</p>
-								{/* <p className="card-text">Rotation Period: {props.hPlanet.rotation_period}</p>
-                                <p className="card-text">Climate: {props.hPlanet.climate}</p>
-                                <p className="card-text">Population: {props.hPlanet.population}</p> */}
 
 								<button onClick={() => props.history.push(`/planetdetails/${props.index + 1}`)}>
 									Planet Details...

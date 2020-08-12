@@ -16,6 +16,7 @@ export class CharacterHome extends React.Component {
 			});
 	}
 	render() {
+		// const charCards=null;
 		return (
 			<div className="container-fluid">
 				<div className="cardsdisplay">
@@ -26,6 +27,8 @@ export class CharacterHome extends React.Component {
 									<CharacterCard
 										imageSrc={`https://loremflickr.com/200/200/starwars?random=${cardIndex + 1}`}
 										character={character}
+										{...this.props}
+										index={cardIndex}
 									/>
 								</div>
 							);

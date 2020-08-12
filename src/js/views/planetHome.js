@@ -15,12 +15,10 @@ export class PlanetHome extends React.Component {
 			});
 	}
 	render() {
-		var plntCards = null;
-
 		return (
 			<div className="planetdisplay">
 				{this.state.plnt.length > 1 ? (
-					(plntCards = this.state.plnt.map((hPlanet, plntcardIndex) => {
+					this.state.plnt.map((hPlanet, plntcardIndex) => {
 						return (
 							<div key={plntcardIndex}>
 								<PlanetCard
@@ -31,7 +29,7 @@ export class PlanetHome extends React.Component {
 								/>
 							</div>
 						);
-					}))
+					})
 				) : (
 					<h1>Loading....</h1>
 				)}
